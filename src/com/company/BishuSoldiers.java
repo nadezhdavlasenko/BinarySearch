@@ -1,3 +1,8 @@
+package com.company;/* IMPORTANT: Multiple classes and nested static classes are supported */
+
+
+//* uncomment this if you want to read input.
+//imports for BufferedReader
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -26,7 +31,7 @@ class BishuSoldiers {
     int n = Integer.parseInt(br.readLine());
     int[] soldiersPower = new int[n];
     String[] soldiersPowerStr = br.readLine().split(" ");
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < soldiersPowerStr.length; i++){
       soldiersPower[i] = Integer.parseInt(soldiersPowerStr[i]);
     }
     // for(int i = 0; i < n; i++){
